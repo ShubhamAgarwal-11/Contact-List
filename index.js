@@ -1,8 +1,12 @@
 const express = require('express');
 const port = 8000;
 const app = express();
+const db = require('./config/mongoose');
+const contact = require('./model/contacts');
 
-
+app.get('/',function(req,res){
+    res.send('Hello Shubham');    
+})
 
 app.listen(port,function(err){
     if(err){
