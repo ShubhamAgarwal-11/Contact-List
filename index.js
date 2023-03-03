@@ -39,6 +39,20 @@ app.post('/create-contact',function(req,res){
     })
 })
 
+app.get('/delete-contact',function(req,res){
+    console.log(req.query);
+    let phone = req.query;
+    
+    contact.deleteOne(phone,function(err){
+        if(err){
+            console.log('error in deleting a contact');
+            return err;
+        }
+        console.log('successfully deleted!!');
+        return res.redirect('back');
+    });
+
+})
 app.listen(port,function(err){
     if(err){
         console.log(`Error in creating a server ${err}`);
