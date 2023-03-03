@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-color: black;
+    color: rgb(73, 255, 73);
+    font-family: Century Gothic;
+}
+/* .contact{
+    display: grid;
+    place-items: center;
+} */
+.input-field{
+    padding: 10px;
+    margin: 10px;
+    font-size: large;
+    border-radius: 20%;
+    background-color: rgb(73, 255, 73);
+    color: black;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+    font-size: large;
+    background-color: rgb(73, 255, 73);
+    color: black;
+    border-radius: 20%;
+}
+ul{
+
+    list-style: none;
+    display: grid;
+    place-items: center;;
+}
+
+.contact li p {
+    display: inline;
+    margin-right: 30px;
+    float: left;
+    /* background-color: aliceblue; */
+}
+.contact li{
+    display: inline;
+}
+a{
+    margin-left: 20px;
+    margin-top: 20px;
+}
